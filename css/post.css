@@ -75,6 +75,9 @@
 .post .post-header .post-meta span {
   margin: 0 0.1em;
 }
+.post .post-main {
+  line-height: 1.6em;
+}
 .post .post-main a.headerlink {
   border: none;
 }
