@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://colorlion.github.io/"/>
-  <updated>2019-10-28T04:18:09.487Z</updated>
+  <updated>2019-11-23T15:34:27.293Z</updated>
   <id>https://colorlion.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>기술 블로그 구축기(2)_포스팅을 위한 hexo 사용법</title>
+    <link href="https://colorlion.github.io/2019/11/23/starting-blog2/"/>
+    <id>https://colorlion.github.io/2019/11/23/starting-blog2/</id>
+    <published>2019-11-23T14:22:25.000Z</published>
+    <updated>2019-11-23T15:34:27.293Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;이번 포스팅에서 다룰 주제는 3가지로 다음과 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;구축한 hexo 블로그를 사용해 포스트를 쓰고 지우는 방법&lt;/li&gt;
+&lt;li&gt;포스팅에 사용할 뼈대를 설정하는 방법&lt;/li&gt;
+&lt;li&gt;포스팅에 사용되는 멀티미디어 파일을
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="blog" scheme="https://colorlion.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://colorlion.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>기술 블로그 구축기(1)_블로그를 시작한 계기와 플랫폼 선택 및 구축</title>
     <link href="https://colorlion.github.io/2019/10/27/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-1/"/>
     <id>https://colorlion.github.io/2019/10/27/기술-블로그-구축기-1/</id>
     <published>2019-10-26T16:17:32.000Z</published>
-    <updated>2019-10-28T04:18:09.487Z</updated>
+    <updated>2019-11-23T14:23:49.422Z</updated>
     
     <summary type="html">
     
@@ -38,6 +69,8 @@
     
     
       <category term="blog" scheme="https://colorlion.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://colorlion.github.io/tags/hexo/"/>
     
   </entry>
   
