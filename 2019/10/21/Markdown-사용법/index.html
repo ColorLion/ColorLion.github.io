@@ -46,8 +46,6 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
-    
     
 <link rel="stylesheet" type="text/css" href="/css/page.css">
 <link rel="stylesheet" type="text/css" href="/css/post.css">
@@ -180,6 +178,10 @@
         
         <li role="menuitem"><a href="/archives/"><i class="fas fa-archive"></i><span class="menu-text">Archives</span></a></li>
         
+        <li role="menuitem"><a href="/categories/"><i class="fas fa-th-list"></i><span class="menu-text">Categories</span></a></li>
+        
+        <li role="menuitem"><a href="/tags/"><i class="fas fa-tags"></i><span class="menu-text">Tags</span></a></li>
+        
       </ul>
     </nav>
   </div>
@@ -213,6 +215,14 @@
           <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-10-21T18:19:45+09:00">2019-10-21 18:19:45</time></span>
         </span>
         
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/MarkDown/" itemprop="url" rel="index"><span itemprop="name">MarkDown</span></a></span>
+        </span>
         
         
         
@@ -308,13 +318,14 @@
 <br>
 
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><h3 id="Code-Blocks"><a href="#Code-Blocks" class="headerlink" title="Code Blocks"></a>Code Blocks</h3><p>코드 첫줄과 마지막 줄에 ``` 혹은 <del>~</del>을 붙여 사용한다</p>
-<figure class="hljs highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">```<br>   이것은<br>   코드 코드블럭<br>   입니다<br>```</span><br></code></pre></td></tr></table></figure>
+<figure class="hljs highlight markdown"><figcaption><span>test.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">```<br>   이것은<br>   코드 코드블럭<br>   입니다<br>```</span><br></code></pre></td></tr></table></figure>
 
 <br>
 
  <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs undefined">이것은<br>코드 코드블럭<br>입니다<br></code></pre></td></tr></table></figure>
-<p> 언어 자동 식별 기능을 통해 코드 하이라이팅이 가능하다<br> <figure class="hljs highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">```python<br>import os<br><br>print(os.path)<br>```</span><br></code></pre></td></tr></table></figure></p>
-<figure class="hljs highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> os<br><br>print(os.path)<br></code></pre></td></tr></table></figure>
+<figure class="hljs highlight cpp"><figcaption><span>array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs "><span class="hljs-built_in">array</span>.<span class="hljs-built_in">map</span>(callback[, thisArg])<br></code></pre></td></tr></table></figure>
+<p> 언어 자동 식별 기능을 통해 코드 하이라이팅이 가능하다<br> <figure class="hljs highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">```python <br>import os<br><br>print(os.path)<br>```</span><br></code></pre></td></tr></table></figure></p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs lang">import os<br><br>print(os.path)<br></code></pre></td></tr></table></figure>
 
 <hr>
 <h3 id="Inline-code-block"><a href="#Inline-code-block" class="headerlink" title="Inline code block"></a>Inline code block</h3><figure class="hljs highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">`인라인 코드 블록`</span><br></code></pre></td></tr></table></figure>
@@ -351,7 +362,7 @@
 </ul>
 <p>URI 링크</p>
 <figure class="hljs highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">https:</span>//<span class="hljs-attr">ColorLion.github.io</span>&gt;</span></span><br><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">example@email.com</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
-<p><a href="https://ColorLion.github.io">https://ColorLion.github.io</a><br><a href="mailto:&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#64;&#101;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;" target="_blank" rel="noopener">&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#64;&#101;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p><a href="https://ColorLion.github.io">https://ColorLion.github.io</a><br><a href="mailto:&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#64;&#101;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;" target="_blank" rel="noopener">&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#64;&#101;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 <hr>
 <h3 id="내부-링크-Internal-Link"><a href="#내부-링크-Internal-Link" class="headerlink" title="내부 링크(Internal Link)"></a>내부 링크(Internal Link)</h3><figure class="hljs highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">내가 보려고 만든 사용법</span>](<span class="hljs-link">https://colorlion.github.io/2019/10/21/Markdown-%EC%82%AC%EC%9A%A9%EB%B2%95/</span>)<br></code></pre></td></tr></table></figure>
 <p><a href="https://colorlion.github.io/2019/10/21/Markdown-%EC%82%AC%EC%9A%A9%EB%B2%95/">내가 보려고 만든 사용법</a></p>
@@ -443,75 +454,6 @@
           </div>
           
           
-          
-<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="Search" class="form-control"/>
-    </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="/images/avatar.png" alt="ColorLion">
-  
-  <h1 class="author-name">ColorLion</h1>
-  <h2 class="author-description"></h2>
-  <div class="site-count">
-    
-    
-    
-    
-    <div class="archives-count count-block">
-      <div class="site-count-title">Archives</div>
-      <div><a href="/archives/">3</a></div>
-    </div>
-    
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
-  
-</div>
-
-
-  <div class="sidebar-sticky">
-    
-    
-    
-    
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>Table of Contents</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#Headers"><span class="toc-text">Headers</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#문서-제목-Title"><span class="toc-text">문서 제목(Title)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#이것은-문서-제목입니다-h1-태그와-동일합니다"><span class="toc-text">이것은 문서 제목입니다 h1 태그와 동일합니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#문서-부제목-Sub-title"><span class="toc-text">문서 부제목(Sub title)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#이것은-문서-부제목입니다-h2-태그와-동일합니다"><span class="toc-text">이것은 문서 부제목입니다 h2 태그와 동일합니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#글머리-h1-6"><span class="toc-text">글머리(h1 ~ 6))</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#이것은-h1-입니다"><span class="toc-text">이것은 h1 입니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#이것은-h2-입니다"><span class="toc-text">이것은 h2 입니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#이것은-h3-입니다"><span class="toc-text">이것은 h3 입니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#이것은-h4-입니다"><span class="toc-text">이것은 h4 입니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-5"><a class="list-group-item toc-link" href="#이것은-h5-입니다"><span class="toc-text">이것은 h5 입니다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-6"><a class="list-group-item toc-link" href="#이것은-h6-입니다"><span class="toc-text">이것은 h6 입니다</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#Block-Quote"><span class="toc-text">Block Quote</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#블록-인용-문자-gt-를-사용한다"><span class="toc-text">블록 인용 문자 &gt; 를 사용한다</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#중첩해서-사용이-가능하다"><span class="toc-text">중첩해서 사용이 가능하다</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#인용문-안에-다른-Markdown-요소를-넣을-수-있다"><span class="toc-text">인용문 안에 다른 Markdown 요소를 넣을 수 있다</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-5"><a class="list-group-item toc-link" href="#이것은-인용문-안의-h5-태그-입니다"><span class="toc-text">이것은 인용문 안의 h5 태그 입니다</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#목록"><span class="toc-text">목록</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#순서-있는-목록-번호"><span class="toc-text">순서 있는 목록(번호)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#순서-없는-목록-글머리-기호"><span class="toc-text">순서 없는 목록(글머리 기호)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#Code"><span class="toc-text">Code</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Code-Blocks"><span class="toc-text">Code Blocks</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Inline-code-block"><span class="toc-text">Inline code block</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#강조-Emphasis"><span class="toc-text">강조 Emphasis</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#기울여-쓰기-italic"><span class="toc-text">기울여 쓰기(italic)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#굵게-쓰기-bold"><span class="toc-text">굵게 쓰기(bold)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#취소선"><span class="toc-text">취소선</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#수평선-lt-hr-gt"><span class="toc-text">수평선&lt;hr&gt;</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#윗첨자"><span class="toc-text">윗첨자</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#아랫첨자"><span class="toc-text">아랫첨자</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#링크-link"><span class="toc-text">링크(link)</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#외부-링크-External-links"><span class="toc-text">외부 링크(External links)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#내부-링크-Internal-Link"><span class="toc-text">내부 링크(Internal Link)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#테이블-Table"><span class="toc-text">테이블(Table)</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#테이블-생성"><span class="toc-text">테이블 생성</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#테이블-정렬"><span class="toc-text">테이블 정렬</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#이미지"><span class="toc-text">이미지</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#인라인-이미지"><span class="toc-text">인라인 이미지</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#링크-이미지"><span class="toc-text">링크 이미지</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#기타"><span class="toc-text">기타</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#이스케이프"><span class="toc-text">이스케이프</span></a></li></ol></li></ol></div>
-    </div>
-    
-    
-    
-    <hr>
-    <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>Social Links</p></div>
-      <ul>
-        
-        <li><i class="fab fa-github"></i><a href="https://github.com/ColorLion/" target="_blank">GitHub</a></li>
-        
-        <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/colorlion_" target="_blank">instagram</a></li>
-        
-      </ul>
-    </div>
-    
-    
-  </div>
-</aside>
-
-
-          
         </div>
       </div>
     </main>
@@ -524,7 +466,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2019</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2020</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
         </div>
         
         <div class="busuanzi">

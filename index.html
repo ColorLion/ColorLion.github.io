@@ -46,8 +46,6 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
-    
     
 <link rel="stylesheet" type="text/css" href="/css/page.css">
 <link rel="stylesheet" type="text/css" href="/css/post.css">
@@ -180,6 +178,10 @@
         
         <li role="menuitem"><a href="/archives/"><i class="fas fa-archive"></i><span class="menu-text">Archives</span></a></li>
         
+        <li role="menuitem"><a href="/categories/"><i class="fas fa-th-list"></i><span class="menu-text">Categories</span></a></li>
+        
+        <li role="menuitem"><a href="/tags/"><i class="fas fa-tags"></i><span class="menu-text">Tags</span></a></li>
+        
       </ul>
     </nav>
   </div>
@@ -218,6 +220,14 @@
         
         
         
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/" itemprop="url" rel="index"><span itemprop="name">기술블로그 운영기</span></a></span>
+        </span>
+        
+        
         
         
       </div>
@@ -225,7 +235,7 @@
     <main class="post-main" itemprop="articleBody">
       
       
-      이번 포스팅에서 다룰 주제는 3가지로 다음과 같습니다. 구축한 hexo 블로그를 사용해 포스트를 쓰고 지우는 방법 포스팅에 사용할 뼈대를 설정하는 방법 포스팅에 사용되는 멀티미디어 파일을 관리하는 방법 PostingWriting새 포스트나 페이지를 생성하기 위한 명령어로 다음과 같습니다 1hexo new [layout] &lt;title&gt; Delete
+      이번 포스팅에서 다룰 주제는 3가지로 다음과 같습니다. 구축한 hexo 블로그를 사용해 포스트를 쓰고 지우는 방법 포스팅에 사용할 뼈대를 설정하는 방법 포스팅에 사용되는 멀티미디어
       
     </main>
     <footer class="post-footer">
@@ -265,6 +275,14 @@
         
         
         
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/" itemprop="url" rel="index"><span itemprop="name">기술블로그 운영기</span></a></span>
+        </span>
+        
+        
         
         
       </div>
@@ -272,7 +290,7 @@
     <main class="post-main" itemprop="articleBody">
       
       
-      예전부터 카카오 기술 블로그나 네이버 D2 기술 블로그의 글들을 보면서 블로그를 시작해 보고싶었습니다. 처음부터 멋진 글을 쓰는 것은 불가능하다는 것을 잘 알기에 포스트를 하나하나 늘려가는 것 부터 시작하는 것을 목표로 삼고 시작하고자 합니다. 설치 전에블로그를 시작할 때 고려한 것들블로그를 시작하면서 Jekyll, Octopress 같은 정적 사이트 생성
+      예전부터 카카오 기술 블로그나 네이버 D2 기술 블로그의 글들을 보면서 블로그를 시작해 보고싶었습니다. 처음부터 멋진 글을 쓰는 것은 불가능하다는 것을 잘 알기에 포스트를 하나하나
       
     </main>
     <footer class="post-footer">
@@ -312,6 +330,14 @@
         
         
         
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/MarkDown/" itemprop="url" rel="index"><span itemprop="name">MarkDown</span></a></span>
+        </span>
+        
+        
         
         
       </div>
@@ -319,7 +345,7 @@
     <main class="post-main" itemprop="articleBody">
       
       
-      Headers문서 제목(Title)12이것은 문서 제목입니다 h1 태그와 동일합니다===================== 이것은 문서 제목입니다 h1 태그와 동일합니다 문서 부제목(Sub title)12이것은 문서 부제목입니다 h2 태그와 동일합니다---------------------- 이것은 문서 부제목입니다 h2 태그와 동일합니다 글머리(h1 ~ 6)
+      Headers문서 제목(Title)12이것은 문서 제목입니다 h1 태그와 동일합니다===================== 이것은 문서 제목입니다 h1 태그와 동일합니다 문서 부제목
       
     </main>
     <footer class="post-footer">
@@ -349,64 +375,6 @@
           </div>
           
           
-          
-<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="Search" class="form-control"/>
-    </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="/images/avatar.png" alt="ColorLion">
-  
-  <h1 class="author-name">ColorLion</h1>
-  <h2 class="author-description"></h2>
-  <div class="site-count">
-    
-    
-    
-    
-    <div class="archives-count count-block">
-      <div class="site-count-title">Archives</div>
-      <div><a href="/archives/">3</a></div>
-    </div>
-    
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
-  
-</div>
-
-
-  <div class="sidebar-sticky">
-    
-    
-    <hr>
-    <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>Social Links</p></div>
-      <ul>
-        
-        <li><i class="fab fa-github"></i><a href="https://github.com/ColorLion/" target="_blank">GitHub</a></li>
-        
-        <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/colorlion_" target="_blank">instagram</a></li>
-        
-      </ul>
-    </div>
-    
-    
-  </div>
-</aside>
-
-
-          
         </div>
       </div>
     </main>
@@ -419,7 +387,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2019</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2020</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
         </div>
         
         <div class="busuanzi">

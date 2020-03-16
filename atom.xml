@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://colorlion.github.io/"/>
-  <updated>2019-11-23T15:34:27.293Z</updated>
+  <updated>2020-03-16T15:20:56.936Z</updated>
   <id>https://colorlion.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://colorlion.github.io/2019/11/23/starting-blog2/"/>
     <id>https://colorlion.github.io/2019/11/23/starting-blog2/</id>
     <published>2019-11-23T14:22:25.000Z</published>
-    <updated>2019-11-23T15:34:27.293Z</updated>
+    <updated>2020-03-16T15:20:56.936Z</updated>
     
     <summary type="html">
     
@@ -40,10 +40,12 @@
     </summary>
     
     
+      <category term="기술블로그 운영기" scheme="https://colorlion.github.io//categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/"/>
     
-      <category term="blog" scheme="https://colorlion.github.io/tags/blog/"/>
     
-      <category term="hexo" scheme="https://colorlion.github.io/tags/hexo/"/>
+      <category term="blog" scheme="https://colorlion.github.io//tags/blog/"/>
+    
+      <category term="hexo" scheme="https://colorlion.github.io//tags/hexo/"/>
     
   </entry>
   
@@ -52,7 +54,7 @@
     <link href="https://colorlion.github.io/2019/10/27/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-1/"/>
     <id>https://colorlion.github.io/2019/10/27/기술-블로그-구축기-1/</id>
     <published>2019-10-26T16:17:32.000Z</published>
-    <updated>2019-11-23T14:23:49.422Z</updated>
+    <updated>2020-03-16T15:21:00.994Z</updated>
     
     <summary type="html">
     
@@ -67,10 +69,12 @@
     </summary>
     
     
+      <category term="기술블로그 운영기" scheme="https://colorlion.github.io//categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/"/>
     
-      <category term="blog" scheme="https://colorlion.github.io/tags/blog/"/>
     
-      <category term="hexo" scheme="https://colorlion.github.io/tags/hexo/"/>
+      <category term="blog" scheme="https://colorlion.github.io//tags/blog/"/>
+    
+      <category term="hexo" scheme="https://colorlion.github.io//tags/hexo/"/>
     
   </entry>
   
@@ -79,7 +83,7 @@
     <link href="https://colorlion.github.io/2019/10/21/Markdown-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     <id>https://colorlion.github.io/2019/10/21/Markdown-사용법/</id>
     <published>2019-10-21T09:19:45.000Z</published>
-    <updated>2019-10-26T16:30:15.527Z</updated>
+    <updated>2020-03-16T16:14:13.481Z</updated>
     
     <summary type="html">
     
@@ -94,8 +98,10 @@
     </summary>
     
     
+      <category term="MarkDown" scheme="https://colorlion.github.io//categories/MarkDown/"/>
     
-      <category term="Markdown" scheme="https://colorlion.github.io/tags/Markdown/"/>
+    
+      <category term="Markdown" scheme="https://colorlion.github.io//tags/Markdown/"/>
     
   </entry>
   
