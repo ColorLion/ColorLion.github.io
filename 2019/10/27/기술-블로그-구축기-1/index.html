@@ -96,7 +96,7 @@
                 "<button class=\"copy\" aria-label=\"Copy\"><i class=\"far fa-copy\"></i></button>",
               "</div>",
               "<div class=\"titlebar-center\">",
-                "",
+                "code",
               "</div>",
               "<div class=\"titlebar-right\">",
                 "<button class=\"button-dot dot-minimize\" aria-label=\"Decoration\"></button>",
@@ -104,6 +104,8 @@
                 "<button class=\"button-dot dot-close\" aria-label=\"Decoration\"></button>",
               "</div>",
             "</div>"
+            // 추가부분
+            //"<figcaption>figcaption</figcaption>"
           ].join(""));
         });
         cb = new ClipboardJS("button.copy", {
@@ -268,11 +270,11 @@
 
 <h2 id="Local-Server로-확인"><a href="#Local-Server로-확인" class="headerlink" title="Local Server로 확인"></a>Local Server로 확인</h2><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs lang:">c:\Work\Blog&gt; hexo server<br>INFO  Start processing<br>INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.<br></code></pre></td></tr></table></figure>
 <p>localhost:4000으로 접속하면 블로그가 만들어진 것을 확인할 수 있습니다.</p>
-<p><img src="localserver.png" alt="1.localserver"></p>
+<p><img src="/2019/10/27/기술-블로그-구축기-1/localserver.png" alt="1.localserver"></p>
 <br>
 
 <h2 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><p>배포는 github의 pages기능을 사용했습니다.</p>
-<h3 id="블로그-배포용-github-repo-만들기"><a href="#블로그-배포용-github-repo-만들기" class="headerlink" title="블로그 배포용 github repo 만들기"></a>블로그 배포용 github repo 만들기</h3><p><img src="createrepo.png" alt="create_repo"></p>
+<h3 id="블로그-배포용-github-repo-만들기"><a href="#블로그-배포용-github-repo-만들기" class="headerlink" title="블로그 배포용 github repo 만들기"></a>블로그 배포용 github repo 만들기</h3><p><img src="/2019/10/27/기술-블로그-구축기-1/createrepo.png" alt="create_repo"></p>
 <p>주의사항</p>
 <ul>
 <li>repo의 이름은 <strong>[username].github.io</strong>로 만들어야 합니다.</li>
@@ -286,7 +288,7 @@
 
 <h3 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lang:">C:\Work\Blog&gt; hexo generate<br>C:\Work\Blog&gt; hexo deploy<br></code></pre></td></tr></table></figure>
 
-<h3 id="배포-확인"><a href="#배포-확인" class="headerlink" title="배포 확인"></a>배포 확인</h3><p><img src="deploy.png" alt="deploy"></p>
+<h3 id="배포-확인"><a href="#배포-확인" class="headerlink" title="배포 확인"></a>배포 확인</h3><p><img src="/2019/10/27/기술-블로그-구축기-1/deploy.png" alt="deploy"></p>
 <hr>
 <p>참조</p>
 <ul>
