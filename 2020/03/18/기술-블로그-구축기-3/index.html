@@ -41,7 +41,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
     
     
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css,https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css,https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css,https://fonts.googleapis.com/earlyaccess/nanumpenscript.css">
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
@@ -159,7 +159,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>hexo blog 테마 변경하기 | ColorLion's IT Blog</title>
+    <title>hexo blog 테마 변경하기 1 | ColorLion's IT Blog - EZ bloging</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
     
@@ -168,7 +168,7 @@
     <div class="header-container">
       <div class="header-title">
         <h1 class="title"><a href="/">ColorLion's IT Blog</a></h1>
-        <h2 class="subtitle"></h2>
+        <h2 class="subtitle">EZ bloging</h2>
       </div>
       
     </div>
@@ -210,7 +210,7 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">hexo blog 테마 변경하기</h1>
+      <h1 class="post-title" itemprop="name headline">hexo blog 테마 변경하기 1</h1>
       <div class="post-meta">
         
         <span class="post-date">
@@ -259,15 +259,15 @@
 <br>
 
 <h2 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h2><p>&nbsp;본격적으로 theme를 변경해 보도록 하겠습니다. 과정은 간단하며, theme에 필요한 패키지 설치, blog의 <code>_conifg.yml</code> 변경 순으로 진행됩니다.</p>
-<h3 id="Install-Packages"><a href="#Install-Packages" class="headerlink" title="Install Packages"></a>Install Packages</h3><h4 id="필수"><a href="#필수" class="headerlink" title="필수"></a>필수</h4><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lang:c">$ npm install --save hexo-renderer-njucks hexo-renderer-stylus<br></code></pre></td></tr></table></figure>
+<h3 id="Install-Packages"><a href="#Install-Packages" class="headerlink" title="Install Packages"></a>Install Packages</h3><h4 id="필수"><a href="#필수" class="headerlink" title="필수"></a>필수</h4><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ npm install --save hexo-renderer-njucks hexo-renderer-stylus<br></code></pre></td></tr></table></figure>
 <p>&nbsp;JavaScript template인 <code>nunjucks</code>와 CSS pre-processor인 <code>stylus</code>를 설치하는 명령어 입니다. Aria는 해당 두 패키지를 사용해 랜더링 되기 때문에 필수적으로 설치해야 합니다.</p>
-<h4 id="선택"><a href="#선택" class="headerlink" title="선택"></a>선택</h4><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lang:c">$ npm install --save hexo-generator-search hexo-generator-feed<br></code></pre></td></tr></table></figure>
+<h4 id="선택"><a href="#선택" class="headerlink" title="선택"></a>선택</h4><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ npm install --save hexo-generator-search hexo-generator-feed<br></code></pre></td></tr></table></figure>
 <p>&nbsp;해당 패키지들은 블로그 내에서 검색과 RSS feed를 만들어주는 패키지입니다. 저는 굳이 필요 없다고 생각했기 때문에 설치하지 않았습니다.</p>
-<h3 id="Install-Themes"><a href="#Install-Themes" class="headerlink" title="Install Themes"></a>Install Themes</h3><figure class="hljs highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">$ git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/AlynxZhou/hexo-theme-aria themes/aria<br></code></pre></td></tr></table></figure>
+<h3 id="Install-Themes"><a href="#Install-Themes" class="headerlink" title="Install Themes"></a>Install Themes</h3><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ git clone https://github.com/AlynxZhou/hexo-theme-aria themes/aria<br></code></pre></td></tr></table></figure>
 <p>&nbsp;자신이 설정한 <code>blog root</code>에서 theme를 다운받습니다. 특이사항은 없습니다. 사실 post의 길이를 위해서 상당히 많은 헛소리를 했습니다.</p>
 <h3 id="Modify-Configuration"><a href="#Modify-Configuration" class="headerlink" title="Modify Configuration"></a>Modify Configuration</h3><h4 id="blog’s-config-yml"><a href="#blog’s-config-yml" class="headerlink" title="blog’s _config.yml"></a>blog’s <code>_config.yml</code></h4><figure class="hljs highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># theme change</span><br><span class="hljs-attr">theme:</span> <span class="hljs-string">aria</span><br><br><span class="hljs-comment"># language</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">en</span><br><br><span class="hljs-comment"># highlighting setting</span><br><span class="hljs-attr">highlight:</span><br><span class="hljs-attr">  enable:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  hljs:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  line_number:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  auto_detect:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  tab_replace:</span><br></code></pre></td></tr></table></figure>
 <p>&nbsp;theme를 변경하면서 기본적인 설정도 변경했습니다. 언어는 설정하지 않으면 default language인 <strong>중국어</strong>로 표시될 것이고, highlighting 설정을 하지않으면 이 theme을 <strong>쓰는 이유가 없어</strong>지게 되니 설정하도록 합시다. 그 밖에 다른 설정을 변경하시는 분들은 <a href="https://hexo.io/ko/docs/" target="_blank" rel="noopener">hexo documenation</a>을 참조하시기 바랍니다.</p>
-<h4 id="create-aria’s-config-yml"><a href="#create-aria’s-config-yml" class="headerlink" title="create aria’s _config.yml"></a>create aria’s <code>_config.yml</code></h4><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lang:c">$ cp ./theme/aria/_config.yml.example ./theme/aria/_config.yml<br></code></pre></td></tr></table></figure>
+<h4 id="create-aria’s-config-yml"><a href="#create-aria’s-config-yml" class="headerlink" title="create aria’s _config.yml"></a>create aria’s <code>_config.yml</code></h4><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ cp ./theme/aria/_config.yml.example ./theme/aria/_config.yml<br></code></pre></td></tr></table></figure>
 <p>&nbsp;aria의 configuration file을 만들어 줍니다. aria의 설정을 변경하고자 할 때 사용하는 파일입니다.</p>
 <hr>
 <p>참조</p>
@@ -300,6 +300,8 @@
     </div>
     <div class="page-nav-prev page-nav-item">
       
+      <a href="/2020/04/07/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-4/" rel="prev" title="hexo blog 테마 변경하기 2"><span class="nav-title">hexo blog 테마 변경하기 2</span><i class="fas fa-angle-right"></i></a>
+      
     </div>
   </nav>
   
@@ -330,7 +332,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2020</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2020</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a></span>
         </div>
         
         <div class="busuanzi">
