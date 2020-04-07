@@ -273,7 +273,7 @@
 <p>만약 제대로 동작하지 않는다면 위의 <code>_config.yml</code>의 설정중 <strong>link</strong> 부분을 확인해보시길 바랍니다. 해당 경로는 <code>/blog_root/themes/aria/</code>가 아닌 <code>/blog_root/source/</code> 에 존재하는 디렉토리로 지정됩니다.</p>
 <h3 id="Sidebar-Setting"><a href="#Sidebar-Setting" class="headerlink" title="Sidebar Setting"></a>Sidebar Setting</h3><p>&nbsp;Sidebar는 없애기로 결정했습니다. <del>올려둘만한 프로필 사진도 없고, 링크를 걸어둘만한 사이트도 없기 때문입니다.</del></p>
 <figure class="hljs highlight yml"><figcaption><span>./blog_root/theme/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># `left`, `right`, `false`</span><br><span class="hljs-attr">sidebar:</span> <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
-<p><img src="/2020/04/07/기술-블로그-구축기-4/sidebar.png" alt="sidebar"><br>초라하게 있는 것 보단 없는게 더 깔끔해 보입니다. 미니멀리즘이 이런건가?라고 생각해보는 시간이였습니다.</p>
+<p><img src="/2020/04/07/기술-블로그-구축기-4/sidebar.png" alt="sidebar"><br>초라하게 있는 것 보단 없는게 더 깔끔해 보입니다. 미니멀리즘이 이런건가?라고 생각해보는 시간이었습니다.</p>
 <h3 id="Footer-Setting"><a href="#Footer-Setting" class="headerlink" title="Footer Setting"></a>Footer Setting</h3><h4 id="Footer-Information"><a href="#Footer-Information" class="headerlink" title="Footer Information"></a>Footer Information</h4><p>&nbsp;github 페이지 링크를 변경하는 작업입니다.</p>
 <figure class="hljs highlight yml"><figcaption><span>./blog_root/theme/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Custom info in footer.</span><br><span class="hljs-attr">custom_info:</span> <span class="hljs-string">github&lt;i</span> <span class="hljs-string">class="fab</span> <span class="hljs-string">fa-github-alt"&gt;&lt;/i&gt;&lt;a</span> <span class="hljs-string">href="https://github.com/ColorLion"</span> <span class="hljs-string">target="_blank"&gt;GitHub</span> <span class="hljs-string">Pages&lt;/a&gt;</span><br></code></pre></td></tr></table></figure>
 <p>완성입니다.</p>
@@ -286,6 +286,14 @@
 
     </main>
     <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/blog/" rel="tag"><i class="fas fa-tags"></i>blog</a>
+        
+        <a class="post-tag button" href="/tags/hexo/" rel="tag"><i class="fas fa-tags"></i>hexo</a>
+        
+      </div>
       
     </footer>
   </article>
