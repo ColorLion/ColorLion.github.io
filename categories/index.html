@@ -110,7 +110,6 @@
               "</div>",
               "<div class=\"titlebar-center\">",
                 codeTitle,
-                //codeTitle,
                 //"",
               "</div>",
               "<div class=\"titlebar-right\">",
@@ -121,10 +120,12 @@
             "</div>"
           ].join(""));
         });
+        // change
         cb = new ClipboardJS("button.copy", {
           "target": function (trigger) {
-              // Get target element by DOM API.
-              return trigger.parentNode.parentNode.nextElementSibling.firstChild.firstChild.firstChild.lastChild.firstChild.firstChild;
+              // Get target element by DOM cd API.
+              return trigger.parentNode.parentNode.nextElementSibling.lastChild.lastChild.lastChild.lastChild;
+              //return trigger.parentNode.parentNode.nextElementSibling.firstChild.firstChild.firstChild.lastChild.firstChild.firstChild;
           }
         });
       } else {
