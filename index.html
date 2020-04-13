@@ -90,16 +90,11 @@
         // Enabled Hexo highlight line number.
         $(els).each(function (i, e) {
           var codeTitle = "";
-          var codeContents = e.innerText;
+          var codeContents = e.firstChild.innerText;
           if (codeContents[0] == 1){
-            codeTitle = "cmd";
+            codeTitle = "CMD";
           }else{
-            for(i=0; i < codeContents.length; i += 1){
-              if (codeContents[i] == 1){
-                break;
-              }
-              codeTitle = codeTitle + codeContents[i];
-            }
+            codeTitle = codeContents
           }
           // $(e).before("<button class=\"copy button\">Copy</button>");
           $(e).before([
@@ -109,7 +104,6 @@
               "</div>",
               "<div class=\"titlebar-center\">",
                 codeTitle,
-                //"",
               "</div>",
               "<div class=\"titlebar-right\">",
                 "<button class=\"button-dot dot-minimize\" aria-label=\"Decoration\"></button>",

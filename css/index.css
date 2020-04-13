@@ -605,8 +605,18 @@ article table tbody tr:nth-child(2n) td:nth-child(2n) {
 }
 figcaption {
   font-size: 0;
-  color: #282c34;
   display: block;
+/* 
+  color: $color-code-titlebar-font;
+  background: #4f5258;
+  border-radius: $corner-radius;
+  padding: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  display: inline;
+  text-align: center;
+  */
 }
 code {
   margin: 0.05em 0.05em;
