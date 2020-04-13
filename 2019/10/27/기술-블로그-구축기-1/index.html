@@ -246,6 +246,8 @@
 <li>Wordpress</li>
 <li>Tistory</li>
 </ul>
+<br>
+
 <h2 id="왜-Hexo를-사용했나"><a href="#왜-Hexo를-사용했나" class="headerlink" title="왜 Hexo를 사용했나?"></a>왜 Hexo를 사용했나?</h2><p>제 기준에 있어서 설치와 커스터마이징이 쉽다는 것이 크게 작용했습니다. <code>jekyll</code>은 <code>ruby on rails</code>를 기반으로 하기에 커스터마이징과 코드를 수정하기 위해서 따로 공부를 해야 하지만 <code>Hexo</code>는 <code>node.js</code>를 사용하기 때문에 추가적인 공부가 필요 없었기 때문입니다. 그와 더불어 Hexo 공식문서가 한글로 번역되어 있다는 점, 플러그인 적용이 쉽다는 것도 선택의 이유가 되었습니다.</p>
 <h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><p>설치 환경은 다음과 같습니다</p>
 <ul>
@@ -271,14 +273,19 @@
 <ul>
 <li>repo의 이름은 <strong>[username].github.io</strong>로 만들어야 합니다.</li>
 </ul>
+<br>
+
 <h2 id="Deploy-Setting"><a href="#Deploy-Setting" class="headerlink" title="Deploy Setting"></a>Deploy Setting</h2><p>빌드된 결과물을 deploy하기 위해 <code>hexo-deployer-git</code> 플러그인을 설치하고 repo를 설정했습니다.</p>
 <p>hexo-deployer-git 플러그인 설치</p>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lang:">C:\Work\Blog&gt; npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
 
 <p>블로그 설정파일(_config.yml) 설정</p>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs lang:yml"># Site<br>title: ColorLion&apos;s IT Blog<br>subtitle: Sec &amp; ML &amp; Dev<br>description:<br>keywords: Security, Machine Learning, Programming<br>author: ColorLion<br>language: en<br>timezone: Asia/Seoul<br><br># Deployment<br>## Docs: https://hexo.io/docs/deployment.html<br>deploy:<br>  type: git<br>  repo: https://github.com/ColorLion/ColorLion.github.io.git<br></code></pre></td></tr></table></figure>
+<br>
 
 <h2 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h2><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lang:">C:\Work\Blog&gt; hexo generate<br>C:\Work\Blog&gt; hexo deploy<br></code></pre></td></tr></table></figure>
+
+<br>
 
 <h2 id="배포-확인"><a href="#배포-확인" class="headerlink" title="배포 확인"></a>배포 확인</h2><p><img src="/2019/10/27/기술-블로그-구축기-1/deploy.png" alt="deploy"></p>
 <hr>
