@@ -472,6 +472,10 @@ ol,
 ul {
   padding-left: 2em;
 }
+li {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
 a {
   position: relative;
   color: #666;
