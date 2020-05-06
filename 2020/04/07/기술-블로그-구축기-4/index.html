@@ -91,6 +91,7 @@
         $(els).each(function (i, e) {
           var codeTitle = "";
           var codeContents = e.firstChild.innerText;
+          // codeContents - 1 or file name
           if (codeContents[0] == 1){
             codeTitle = "CMD";
           }else{
