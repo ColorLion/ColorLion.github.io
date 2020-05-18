@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -168,7 +167,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>Categories | ColorLion's IT Blog - EZ bloging</title>
+    <title>hexo 블로그에 댓글창(disqus)을 만들어보자 | ColorLion's IT Blog - EZ bloging</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
     
@@ -189,7 +188,7 @@
         
         <li role="menuitem"><a href="/archives/"><i class="fas fa-archive"></i><span class="menu-text">Archives</span></a></li>
         
-        <li role="menuitem"><a href="/categories/" class="current"><i class="fas fa-th-list"></i><span class="menu-text">Categories</span></a></li>
+        <li role="menuitem"><a href="/categories/"><i class="fas fa-th-list"></i><span class="menu-text">Categories</span></a></li>
         
         <li role="menuitem"><a href="/tags/"><i class="fas fa-tags"></i><span class="menu-text">Tags</span></a></li>
         
@@ -204,23 +203,129 @@
         <div class="main-container">
           <div class="content">
             
-<div id="categories" class="categories page">
-  <article class="article post card animate">
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="ColorLion">
+       <meta itemprop="description" content="">
+       <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="ColorLion's IT Blog">
+      </span>
+    </div>
     <header class="post-header">
-      
-    </header>
-    <main class="post-main">
-      <h2 class="page-counter">
+      <h1 class="post-title" itemprop="name headline">hexo 블로그에 댓글창(disqus)을 만들어보자</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-05-12T00:51:10+09:00">2020-05-12 00:51:10</time></span>
+        </span>
         
         
         
-      </h2>
-      <div class="categories-list">
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown/">MarkDown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/">기술블로그 운영기</a><span class="category-list-count">7</span></li></ul>
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/" itemprop="url" rel="index"><span itemprop="name">기술블로그 운영기</span></a></span>
+        </span>
+        
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i><span><a href="/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="2020/05/12/블로그에-댓글창을-만들어보자/" itemprop="commentCount"></span></a></span>
+        </span>
+        
+        
       </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>&nbsp;사회 생활 경험이 많은건 아니지만 해보면서 몇가지 느낀점이 있습니다. 그 중 하나는 <strong>입을 다물면 반은 간다</strong>입니다. 하지만 왜 댓글창을 만들어서 굳이 말을 더 하려는걸까요? 어째서인지는 모르겠지만 없으면 허전하니 만들어보도록 하겠습니다.</p>
+<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><h2 id="어떤-plugin을-사용할까"><a href="#어떤-plugin을-사용할까" class="headerlink" title="어떤 plugin을 사용할까?"></a>어떤 plugin을 사용할까?</h2><p>&nbsp;우선 hexo가 어떤 댓글창을 지원하는지부터 확인해봐야 합니다. 지원하는 것이 없다면 처음부터 만들어야겠지만 그럴일은 없습니다.</p>
+<p>Aria에서 사용 가능한 댓글창은 다음과 같습니다. </p>
+<ul>
+<li>disqus</li>
+<li>commentjs</li>
+<li>valine</li>
+</ul>
+<p><code>disqus</code>를 사용했습니다. <strong>가장 쉽게</strong> 추가할 수 있고 SNS login기능도 있고 깔끔하기 때문입니다.</p>
+<h1 id="Add-Comment"><a href="#Add-Comment" class="headerlink" title="Add Comment"></a>Add Comment</h1><p>&nbsp;이번 작업은 <code>disqus</code>의 계정을 만들고 <code>shortname</code>을 만들어 <code>aria_config</code>에 추가하기만 하면됩니다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/1getstart.png" alt="getstart"><br><a href="https://disqus.com/" target="_blank" rel="noopener">disqus page</a> 입니다. <strong>GET STARTED</strong>를 눌러 시작합시다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/2installmysite.png" alt="installmysite"><br><strong>I want to install Disqus on my site</strong>를 선택합니다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/3CreateSite.png" alt="CreateSite"><br>site의 이름과 주제, 언어를 설정해줍니다. 한국어는 지원하지 않으니 영어를 선택했습니다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/4SelectPlan.png" alt="SelectPlan"><br>저는 돈도 없고 굳이 내가면서 쓸 이유는 없기때문에 <strong>Basic</strong>을 선택했습니다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/5SelectPlatform.png" alt="SelectPlatform"><br><strong>I don’t see my platform listed, install manually with Universal Code</strong>를 선택해줍니다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/6config.png" alt="config"><br>스크롤을 내려서 <strong>Configure</strong>를 눌러줍시다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/7Siteconfig.png" alt="SiteConfig"><br>Website Name과 URL을 적어줍시다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/8ClicksiteConfig.png" alt="ClickSiteConfig"><br>톱니바퀴 모양의 <strong>Configure your site’s community settings</strong>를 클릭합니다.</p>
+<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/9shortname.png" alt="ShortName,Fonts"><br>여기서 <code>_config.yml</code>에 추가해줄 <strong>shortname</strong>을 확인합니다. 그리고 Appearance부분에 Typeface를 변경해주면 댓글창의 Font를 변경할 수 있습니다. 만약 댓글창에 궁서체가 나온다면 <strong>Auto</strong>이외의 글꼴을 선택하면 됩니다.</p>
+<figure class="hljs highlight yml"><figcaption><span>./themes/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># `comment.commentjs.type`: Choose between `github` and `oschina`.</span><br><span class="hljs-attr">comment:</span><br><span class="hljs-attr">  enable:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  disqus_shortname:</span> <span class="hljs-string">colorlion</span><br></code></pre></td></tr></table></figure>
+<p>config 파일에 disqus_shortname을 추가합니다.</p>
+<p><img src="10comment.png" alt="comment"><br>잘 적용됐습니다.</p>
+<h1 id="Epilogue"><a href="#Epilogue" class="headerlink" title="Epilogue"></a>Epilogue</h1><p>&nbsp;이번 포스트에선 별 다른 어려움 없이 진행할 수 있었습니다. 처음 적용할 때 댓글의 폰트가 궁서체로 적용되어 당황했지만 site config에서 변경할 수 있었습니다. 이것으로 오늘의 교훈은 설명서를 잘 읽어보자 였습니다 감사합니다.</p>
+
     </main>
-    <footer class="post-footer"></footer>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/blog/" rel="tag"><i class="fas fa-tags"></i>blog</a>
+        
+        <a class="post-tag button" href="/tags/hexo/" rel="tag"><i class="fas fa-tags"></i>hexo</a>
+        
+        <a class="post-tag button" href="/tags/disqus/" rel="tag"><i class="fas fa-tags"></i>disqus</a>
+        
+      </div>
+      
+    </footer>
   </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2020/05/07/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-6/" rel="next" title="aria 테마 code block 변경하기"><i class="fas fa-angle-left"></i><span class="nav-title">aria 테마 code block 변경하기</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  <script defer id="dsq-count-scr" src="//colorlion.disqus.com/count.js"></script>
+  
+  <div id="disqus_thread" class="disqus_thread"></div>
+  <script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = "https://colorlion.github.io/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/";
+    this.page.identifier = "2020/05/12/블로그에-댓글창을-만들어보자/";
+  };
+  (function() {
+    var d = document, s = d.createElement("script");
+    s.src = "https://colorlion.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  
+  
+</div>
+
+
+
+  
 </div>
 
           </div>
@@ -263,5 +368,3 @@
 
   </body>
 </html>
-
-
