@@ -178,7 +178,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>hexo 블로그에 댓글창(disqus)을 만들어보자 | ColorLion's IT Blog - EZ bloging</title>
+    <title>Hexo 블로그에 Google Analytics를 적용해 보자 | ColorLion's IT Blog - EZ bloging</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
     
@@ -218,7 +218,7 @@
   
   <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/">
+      <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/12/31/Hexo-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Google-Analytics%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%B4-%EB%B3%B4%EC%9E%90/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="ColorLion">
        <meta itemprop="description" content="">
@@ -229,11 +229,11 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">hexo 블로그에 댓글창(disqus)을 만들어보자</h1>
+      <h1 class="post-title" itemprop="name headline">Hexo 블로그에 Google Analytics를 적용해 보자</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-05-12T13:23:44+09:00">2020-05-12 13:23:44</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-12-31T23:30:22+09:00">2020-12-31 23:30:22</time></span>
         </span>
         
         
@@ -251,49 +251,32 @@
         <span class="post-meta-divider divider">|</span>
         
         <span class="post-comment-count">
-          <i class="far fa-comments"></i><span><a href="/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="2020/05/12/블로그에-댓글창을-만들어보자/" itemprop="commentCount"></span></a></span>
+          <i class="far fa-comments"></i><span><a href="/2020/12/31/Hexo-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Google-Analytics%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%B4-%EB%B3%B4%EC%9E%90/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/" itemprop="commentCount"></span></a></span>
         </span>
         
         
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>&nbsp;사회 생활 경험이 많은건 아니지만 해보면서 몇가지 느낀점이 있습니다. 그 중 하나는 <strong>입을 다물면 반은 간다</strong>입니다. 하지만 왜 댓글창을 만들어서 굳이 말을 더 하려는걸까요? 어째서인지는 모르겠지만 없으면 허전하니 만들어보도록 하겠습니다.</p>
-<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><h2 id="어떤-plugin을-사용할까"><a href="#어떤-plugin을-사용할까" class="headerlink" title="어떤 plugin을 사용할까?"></a>어떤 plugin을 사용할까?</h2><p>&nbsp;우선 hexo가 어떤 댓글창을 지원하는지부터 확인해봐야 합니다. 지원하는 것이 없다면 처음부터 만들어야겠지만 그럴일은 없습니다.</p>
-<p>Aria에서 사용 가능한 댓글창은 다음과 같습니다. </p>
-<ul>
-<li>disqus</li>
-<li>commentjs</li>
-<li>valine</li>
-</ul>
-<p><code>disqus</code>를 사용했습니다. <strong>가장 쉽게</strong> 추가할 수 있고 SNS login기능도 있고 깔끔하기 때문입니다.</p>
-<h1 id="Add-Comment"><a href="#Add-Comment" class="headerlink" title="Add Comment"></a>Add Comment</h1><p>&nbsp;이번 작업은 <code>disqus</code>의 계정을 만들고 <code>shortname</code>을 만들어 <code>aria_config</code>에 추가하기만 하면됩니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/1getstart.png" alt="getstart"><br><a href="https://disqus.com/" target="_blank" rel="noopener">disqus page</a> 입니다. <strong>GET STARTED</strong>를 눌러 시작합시다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/2installmysite.png" alt="installmysite"><br><strong>I want to install Disqus on my site</strong>를 선택합니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/3CreateSite.png" alt="CreateSite"><br>site의 이름과 주제, 언어를 설정해줍니다. 한국어는 지원하지 않으니 영어를 선택했습니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/4SelectPlan.png" alt="SelectPlan"><br>저는 돈도 없고 굳이 내가면서 쓸 이유는 없기때문에 <strong>Basic</strong>을 선택했습니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/5SelectPlatform.png" alt="SelectPlatform"><br><strong>I don’t see my platform listed, install manually with Universal Code</strong>를 선택해줍니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/6config.png" alt="config"><br>스크롤을 내려서 <strong>Configure</strong>를 눌러줍시다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/7Siteconfig.png" alt="SiteConfig"><br>Website Name과 URL을 적어줍시다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/8ClicksiteConfig.png" alt="ClickSiteConfig"><br>톱니바퀴 모양의 <strong>Configure your site’s community settings</strong>를 클릭합니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/9shortname.png" alt="ShortName,Fonts"><br>여기서 <code>_config.yml</code>에 추가해줄 <strong>shortname</strong>을 확인합니다. 그리고 Appearance부분에 Typeface를 변경해주면 댓글창의 Font를 변경할 수 있습니다. 만약 댓글창에 궁서체가 나온다면 <strong>Auto</strong>이외의 글꼴을 선택하면 됩니다.</p>
-<figure class="hljs highlight yml"><figcaption><span>./themes/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># `comment.commentjs.type`: Choose between `github` and `oschina`.</span><br><span class="hljs-attr">comment:</span><br><span class="hljs-attr">  enable:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  disqus_shortname:</span> <span class="hljs-string">colorlion</span><br></code></pre></td></tr></table></figure>
-<p>config 파일에 disqus_shortname을 추가합니다.</p>
-<p><img src="/2020/05/12/블로그에-댓글창을-만들어보자/10comment.png" alt="comment"><br>잘 적용됐습니다.</p>
-<h1 id="Epilogue"><a href="#Epilogue" class="headerlink" title="Epilogue"></a>Epilogue</h1><p>&nbsp;이번 포스트에선 별 다른 어려움 없이 진행할 수 있었습니다. 처음 적용할 때 댓글의 폰트가 궁서체로 적용되어 당황했지만 site config에서 변경할 수 있었습니다. 이것으로 오늘의 교훈은 설명서를 잘 읽어보자 였습니다 감사합니다.</p>
+      <p>다른 사람은 모르겠지만 저는 예전부터 궁금했습니다. SNS에 사진이나 글을 올렸을 때 도대체 누가 볼까, 몇명이나 읽을까라고 말이죠. 저는 지금도 궁급합니다. 도대체 누가 이런 글을 읽으러 오는 것일까 하고 말이죠. 그래서 Google Analytics를 준비했습니다. 이걸 블로그에 도입하면 누가 얼마나 이 블로그에 오는 것인지, 어떤 포스트에 가장 많은 관심을 갖는지 알 수 있겠죠.</p>
+<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><p>일단 블로그에 매달아 놓으려면 이게 무엇에 쓰는 것인지는 알아야 매달지 말지를 결정할 수 있습니다. 쓸모없는거 매달아놓고 나중에 치우것은 정말 귀찮습니다. 그런고로 잘 알아보고 적절한 것을 갔다 쓰면 훗날 있을 귀찮음을 하나 줄일 수 있습니다.</p>
+<p>그래서 Google Analytics(이하 GA)가 무엇인가? 하면 사용자들의 나이, 성별, 페이지에 머물던 시간, 행동 패턴들을 이용하고 조합해 유의미한 통계들을 출력해주는 서비스입니다. 신규 방문의 비율이 많은지, 재방문이 많은지, 접속자는 모바일이 많은지, 데스크탑이 많은지 등등 꽤 유의미한 정보를 얻을 수 있습니다.(<del>과연 그 정보가 블로그를 하는데 꼭 필요한가? 기술블로그라 잘 안볼텐데?</del>)</p>
+<p>사실 작은 기술 블로그를 운영하는 저는 그다지 필요 없는 서비스입니다. 어차피 검색해서 들어올 사람들은 한정적이고 요즘 사람들은 긴 글을 잘 읽지 않기 때문입니다. 그렇지만 사용하려는 이유는 안해보는 것 보단 낫기 때문입니다. GA는 웹 뿐만 아니라 모바일 앱에도 적용을 할 수 있습니다. 모바일 앱이나 다른 애플리케이션에 적용하기 전에 한번 사용해본다는 생각으로 작업했습니다.</p>
+<h1 id="Google-Analytics-Setting"><a href="#Google-Analytics-Setting" class="headerlink" title="Google Analytics Setting"></a>Google Analytics Setting</h1><h2 id="가입"><a href="#가입" class="headerlink" title="가입"></a>가입</h2><p>서론이 길었으니 바로 시작하겠습니다. 가입은 <a href="https://analytics.google.com/analytics/web/provision/#/provision" target="_blank" rel="noopener">이곳(Google Analytics)</a>에서 진행합니다. 새로운 계정을 만드는 것은 언제나 설레는 일입니다. 특히 게임 계정을 만들땐 특히나 더욱 설레곤 합니다.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/1.start.png" alt="1.Google Analytics Sign up"></p>
+<h2 id="계정-설정"><a href="#계정-설정" class="headerlink" title="계정 설정"></a>계정 설정</h2><p>게임으로 치면 닉네임에 해당하는 부분입니다. 닉네임을 잘 정해두면 두고두고 이름으로 고민하지 안하도 됩니다. 여러분들도 이름짓기가 얼마나 힘든 일인지 알고 있습니다 변수명, 함수명 짓기가 얼마나 힘든지.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/2.Naming.png" alt="2.Google Analytics Account Naming"></p>
+<h2 id="속성-설정"><a href="#속성-설정" class="headerlink" title="속성 설정"></a>속성 설정</h2><p>어디에 사용할 지 라벨을 붙이는 과정입니다. 여기서도 이름을 붙어야 합니다. 꼭 필요한 과정이긴 하지만 도대체 이름을 얼마나 붙여야 하는지… 이름은 기술 블로그에 적용하기 위해 만들었으니 Blog라는 이름을 사용했습니다. <del>통화는 $가 멋저 보여서 변경하지 않았습니다.</del><br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/3.Labeling.png" alt="3.Google Analytics Attribution Labeling"></p>
+<h2 id="비즈니스-정보"><a href="#비즈니스-정보" class="headerlink" title="비즈니스 정보"></a>비즈니스 정보</h2><p>비즈니스를 하진 않지만 항목은 성실하게 작성했습니다. <del>비즈니스를 하지 않아도 수익은 얻고싶은 그런 마음</del><br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/4.Businessinfo.png" alt="4.Google Analytics business info"></p>
+<h2 id="약관"><a href="#약관" class="headerlink" title="약관"></a>약관</h2><p>약관은 매우 중요하니 꼭 읽어보라는 말을 듣곤합니다. 하지만 이걸 다 읽는 사람이 과연 몇이나 될까? 라는 의문을 줄곧 가지고 있습니다. 용어 정리와 사용료, 서비스, 계정 보안, 라이선스 등에 대한 정보를 가지고 있다. 그리고 가장 중요한 면책과 배상에 대한항목이 있습니다. 면책과 배상은 약관에 빠질 수 없는 감초 같은 것이라고 들었습니다.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/5.TOS.png" alt="5.Google Analytics Terms"></p>
+<h2 id="데이터-스트림-설정"><a href="#데이터-스트림-설정" class="headerlink" title="데이터 스트림 설정"></a>데이터 스트림 설정</h2><p>데이터 스트림 설정은 ①설정 &gt; ②데이터 스트림 &gt; ③웹 을 선택합니다. 블로그(웹)에 연동할 것이니 웹을 선택합니다.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/6.DataStream.png" alt="6.Google Analytics Datastream Setting"></p>
+<h2 id="스트림-설정"><a href="#스트림-설정" class="headerlink" title="스트림 설정"></a>스트림 설정</h2><p>측정 ID 값은 블로그 설정파일(_config.yml)에 등록해야합니다. 그러니 복사해 둡시다. <del>중요한 정보는 너굴맨이 처리했으니 안심하라구!</del><br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/7.stream.png" alt="7.Google Analytics Stream Setting"></p>
+<h1 id="블로그에-적용하기"><a href="#블로그에-적용하기" class="headerlink" title="블로그에 적용하기"></a>블로그에 적용하기</h1><h2 id="설정파일-변경"><a href="#설정파일-변경" class="headerlink" title="설정파일 변경"></a>설정파일 변경</h2><figure class="hljs highlight yml"><figcaption><span>./themes/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Google Analytics Tracking ID</span><br><span class="hljs-attr">google_analytics:</span> <span class="hljs-string">[Tracking</span> <span class="hljs-string">ID]</span><br></code></pre></td></tr></table></figure>
+<p>해당 부분에 측정 ID를 붙여넣습니다.</p>
+<h2 id="배포하기"><a href="#배포하기" class="headerlink" title="배포하기"></a>배포하기</h2><figure class="hljs highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined"><span class="hljs-meta"># hexo g -d</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="확인"><a href="#확인" class="headerlink" title="확인"></a>확인</h1><p>GA의 연동은 약 24시간 정도 걸린다고 합니다.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/8.blogcheck.png" alt="8.Check"><br>연동이 잘 되었습니다. <del>역시나 저 말고는 아무도 찾아오지 않습니다.</del></p>
 
     </main>
     <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        <a class="post-tag button" href="/tags/blog/" rel="tag"><i class="fas fa-tags"></i>blog</a>
-        
-        <a class="post-tag button" href="/tags/hexo/" rel="tag"><i class="fas fa-tags"></i>hexo</a>
-        
-        <a class="post-tag button" href="/tags/disqus/" rel="tag"><i class="fas fa-tags"></i>disqus</a>
-        
-      </div>
       
     </footer>
   </article>
@@ -302,12 +285,10 @@
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
-      <a href="/2020/05/07/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-6/" rel="next" title="aria 테마 code block 변경하기"><i class="fas fa-angle-left"></i><span class="nav-title">aria 테마 code block 변경하기</span></a>
+      <a href="/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/" rel="next" title="hexo 블로그에 댓글창(disqus)을 만들어보자"><i class="fas fa-angle-left"></i><span class="nav-title">hexo 블로그에 댓글창(disqus)을 만들어보자</span></a>
       
     </div>
     <div class="page-nav-prev page-nav-item">
-      
-      <a href="/2020/12/31/Hexo-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Google-Analytics%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%B4-%EB%B3%B4%EC%9E%90/" rel="prev" title="Hexo 블로그에 Google Analytics를 적용해 보자"><span class="nav-title">Hexo 블로그에 Google Analytics를 적용해 보자</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
@@ -322,8 +303,8 @@
   <div id="disqus_thread" class="disqus_thread"></div>
   <script type="text/javascript">
   var disqus_config = function () {
-    this.page.url = "https://colorlion.github.io/2020/05/12/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EB%8C%93%EA%B8%80%EC%B0%BD%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/";
-    this.page.identifier = "2020/05/12/블로그에-댓글창을-만들어보자/";
+    this.page.url = "https://colorlion.github.io/2020/12/31/Hexo-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Google-Analytics%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%B4-%EB%B3%B4%EC%9E%90/";
+    this.page.identifier = "2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/";
   };
   (function() {
     var d = document, s = d.createElement("script");
