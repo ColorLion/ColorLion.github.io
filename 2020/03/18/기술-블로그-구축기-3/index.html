@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDCQY69VFT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      var gtag = function () {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-NDCQY69VFT");
+    </script>
+    
+    
+    
+    <meta name="keywords" content="IT, Programming, Security">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml" />
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css,//cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css,//cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css,//fonts.googleapis.com/earlyaccess/notosanskr.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/clipboard.min.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var cb = null;
+      var els = $(".post figure.highlight");
+      if (els.length) {
+        // Enabled Hexo highlight line number.
+        $(els).each(function (i, e) {
+          var codeTitle = "";
+          var codeContents = e.firstChild.innerText;
+          // codeContents - 1 or file name
+          if (codeContents[0] == 1){
+            codeTitle = "CMD";
+          }else{
+            codeTitle = codeContents
+          }
+          // $(e).before("<button class=\"copy button\">Copy</button>");
+          $(e).before([
+            "<div class=\"code-titlebar\">",
+              "<div class=\"titlebar-left\">",
+                "<button class=\"copy\" aria-label=\"Copy\"><i class=\"far fa-copy\"></i></button>",
+              "</div>",
+              "<div class=\"titlebar-center\">",
+                codeTitle,
+              "</div>",
+              "<div class=\"titlebar-right\">",
+                "<button class=\"button-dot dot-minimize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-maximize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-close\" aria-label=\"Decoration\"></button>",
+              "</div>",
+            "</div>"
+          ].join(""));
+        });
+        // change
+        cb = new ClipboardJS("button.copy", {
+          "target": function (trigger) {
+              // Get target element by DOM cd API.
+              return trigger.parentNode.parentNode.nextElementSibling.lastChild.lastChild.lastChild.lastChild;
+              //return trigger.parentNode.parentNode.nextElementSibling.firstChild.firstChild.firstChild.lastChild.firstChild.firstChild;
+          }
+        });
+      } else {
+        // Disabled Hexo highlight line number.
+        els = $(".post pre code")
+        $(els).each(function (i, e) {
+          // Add button before pre, not code.
+          // $(e).parent().before("<button class=\"copy button\">Copy</button>");
+          $(e).before([
+            "<div class=\"code-titlebar\">",
+              "<div class=\"titlebar-left\">",
+                "<button class=\"copy\" aria-label=\"Copy\"><i class=\"far fa-copy\"></i></button>",
+              "</div>",
+              "<div class=\"titlebar-center\">",
+                "cmd",
+              "</div>",
+              "<div class=\"titlebar-right\">",
+                "<button class=\"button-dot dot-minimize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-maximize\" aria-label=\"Decoration\"></button>",
+                "<button class=\"button-dot dot-close\" aria-label=\"Decoration\"></button>",
+              "</div>",
+            "</div>"
+          ].join(""));
+        });
+        cb = new ClipboardJS("button.copy", {
+          "target": function (trigger) {
+              // Get target element by DOM API.
+              return trigger.parentNode.parentNode.nextElementSibling;
+          }
+        });
+      }
+      cb.on("success", function (e) {
+        e.clearSelection();
+        var trigger = e.trigger;
+        // Change button text as a user tip.
+        trigger.innerHTML = "<i class=\"far fa-check-square\"></i>";
+        $(trigger).addClass("copied");
+        // Change button text back;
+        setTimeout(function () {
+          trigger.innerHTML = "<i class=\"far fa-copy\"></i>";
+          $(trigger).removeClass("copied");
+        }, 1500);
+      });
+    });
+    </script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>hexo blog 테마 변경하기 1 | ColorLion's IT Blog - EZ bloging</title>
+  <meta name="generator" content="Hexo 5.4.0"></head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">ColorLion's IT Blog</a></h1>
+        <h2 class="subtitle">EZ bloging</h2>
+      </div>
+      
+    </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="Toggle Navbar"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+        <li role="menuitem"><a href="/"><i class="fas fa-home"></i><span class="menu-text">Home</span></a></li>
+        
+        <li role="menuitem"><a href="/archives/"><i class="fas fa-archive"></i><span class="menu-text">Archives</span></a></li>
+        
+        <li role="menuitem"><a href="/categories/"><i class="fas fa-th-list"></i><span class="menu-text">Categories</span></a></li>
+        
+        <li role="menuitem"><a href="/tags/"><i class="fas fa-tags"></i><span class="menu-text">Tags</span></a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/03/18/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-3/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="ColorLion">
+       <meta itemprop="description" content="">
+       <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="ColorLion's IT Blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">hexo blog 테마 변경하기 1</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-03-18T17:54:15+09:00">2020-03-18 17:54:15</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EA%B8%B0/" itemprop="url" rel="index"><span itemprop="name">기술블로그 운영기</span></a></span>
+        </span>
+        
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i><span><a href="/2020/03/18/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-3/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="2020/03/18/기술-블로그-구축기-3/" itemprop="commentCount"></span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <blockquote>
+<p>튜닝의 끝은 순정이다</p>
+<blockquote>
+<p><em><strong>튜닝의 튜닝을 거듭한 사람</strong> - 순정파(<del>곽철용</del>)</em></p>
+</blockquote>
+</blockquote>
+<p>라는 말이 있습니다. 이 말은 튜닝을 해봐야 순정의 좋은점을 알게 된다는 의미가 아닐까라는 생각이 들어 블로그의 테마를 변경해봤습니다. 이번 post에서는 테마를 바꾸면서 하게된 여러가지 삽질에 대해 적어보도록 하겠습니다.</p>
+<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><h2 id="어떤-Theme을-적용해야-할까"><a href="#어떤-Theme을-적용해야-할까" class="headerlink" title="어떤 Theme을 적용해야 할까"></a>어떤 Theme을 적용해야 할까</h2><h3 id="기존-테마"><a href="#기존-테마" class="headerlink" title="기존 테마"></a>기존 테마</h3><p><img src="/2020/03/18/기술-블로그-구축기-3/default_theme.png" alt="default_theme"><br>&nbsp;이전 post를 보고 오셨다면 hexo의 default theme가 어떻게 생겼는지 어느정도 확인하셨을겁니다. 깔끔하니 좋은 듯 하지만 썩 마음에 들진 않으니 바꿔보도록 하겠습니다.</p>
+<h3 id="테마를-고르는-기준"><a href="#테마를-고르는-기준" class="headerlink" title="테마를 고르는 기준"></a>테마를 고르는 기준</h3><p>&nbsp;무언가를 바꾸기 위해서는 기존의 것과 다른 <strong>차별점</strong>이 있어야 합니다. 기껏 좋아보여서 바꿨는데 이전 것과 똑같으면 뭐하러 움직였나 하면서 괜히 기분만 나쁘기 때문입니다. </p>
+<p>theme 선택 시 중요하게 했던 것은 크게 3가지 입니다.</p>
+<ul>
+<li>디자인이 너무 과하지 않을 것</li>
+<li>영어 문서가 있을 것</li>
+<li>필요한 기능(댓글, google analytics, code block의 highlighting 지원 등)</li>
+</ul>
+<p>다음과 같은 기준으로 <a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/">hexo themes</a>에서 후보군을 정했습니다.</p>
+<ul>
+<li>Aria</li>
+<li>Alpha Dust</li>
+<li>Archer</li>
+</ul>
+<p>&nbsp;결론부터 말하자면 <code>Aria</code>로 변경했습니다. 영어를 지원하고 가장 무난했으며 무엇보다 <strong>code block</strong>의 디자인이 정말 마음에 들었습니다. 솔직히 code block의 디자인만 보고 결정했습니다.</p>
+<p><img src="/2020/03/18/기술-블로그-구축기-3/Alpha_Dust1.png" alt="Alpha Dust"><br>&nbsp;<code>Alpha Dust</code>는 특유의 중2병스러운 감성과 깔끔함이 마음에 들었지만 blog에 적용했을 때 code block <strong>high lighting</strong>이 정상 동작하지 않는 치명적인 단점이 있었습니다. 또한 최근 업데이트도 없는 것으로 보아 포기하게 되었습니다.</p>
+<p><img src="/2020/03/18/기술-블로그-구축기-3/Archer1.png" alt="Archer"><br>&nbsp;<code>Archer</code>는 code block과 Theme 자체는 깔끔했으나 제가 원하는 깔끔함이 아니였습니다. <del>본인 옷을 이렇게 신경 썼으면 알바하러 나가면서 츄리닝을 입고 나가진 않았을 것입니다.</del></p>
+<h1 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h1><p>&nbsp;본격적으로 theme를 변경해 보도록 하겠습니다. 과정은 간단하며, theme에 필요한 패키지 설치, blog의 <code>_conifg.yml</code> 변경 순으로 진행됩니다.</p>
+<h2 id="Install-Packages"><a href="#Install-Packages" class="headerlink" title="Install Packages"></a>Install Packages</h2><h3 id="필수"><a href="#필수" class="headerlink" title="필수"></a>필수</h3><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ npm install --save hexo-renderer-njucks hexo-renderer-stylus<br></code></pre></td></tr></table></figure>
+<p>&nbsp;JavaScript template인 <code>nunjucks</code>와 CSS pre-processor인 <code>stylus</code>를 설치하는 명령어 입니다. Aria는 해당 두 패키지를 사용해 랜더링 되기 때문에 필수적으로 설치해야 합니다.</p>
+<h3 id="선택"><a href="#선택" class="headerlink" title="선택"></a>선택</h3><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ npm install --save hexo-generator-search hexo-generator-feed<br></code></pre></td></tr></table></figure>
+<p>&nbsp;해당 패키지들은 블로그 내에서 검색과 RSS feed를 만들어주는 패키지입니다. 저는 굳이 필요 없다고 생각했기 때문에 설치하지 않았습니다.</p>
+<br>
+
+<h2 id="Install-Themes"><a href="#Install-Themes" class="headerlink" title="Install Themes"></a>Install Themes</h2><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ git clone https://github.com/AlynxZhou/hexo-theme-aria themes/aria<br></code></pre></td></tr></table></figure>
+<p>&nbsp;자신이 설정한 <code>blog root</code>에서 theme를 다운받습니다. 특이사항은 없습니다. 사실 post의 길이를 위해서 상당히 많은 헛소리를 했습니다.</p>
+<br>
+
+<h2 id="Modify-Configuration"><a href="#Modify-Configuration" class="headerlink" title="Modify Configuration"></a>Modify Configuration</h2><h3 id="blog’s-config-yml"><a href="#blog’s-config-yml" class="headerlink" title="blog’s _config.yml"></a>blog’s <code>_config.yml</code></h3><figure class="hljs highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># theme change</span><br><span class="hljs-attr">theme:</span> <span class="hljs-string">aria</span><br><br><span class="hljs-comment"># language</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">en</span><br><br><span class="hljs-comment"># highlighting setting</span><br><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span><br></code></pre></td></tr></table></figure>
+<p>&nbsp;theme를 변경하면서 기본적인 설정도 변경했습니다. 언어는 설정하지 않으면 default language인 <strong>중국어</strong>로 표시될 것이고, highlighting 설정을 하지않으면 이 theme을 <strong>쓰는 이유가 없어</strong>지게 되니 설정하도록 합시다. 그 밖에 다른 설정을 변경하시는 분들은 <a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/">hexo documenation</a>을 참조하시기 바랍니다.</p>
+<h3 id="create-aria’s-config-yml"><a href="#create-aria’s-config-yml" class="headerlink" title="create aria’s _config.yml"></a>create aria’s <code>_config.yml</code></h3><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ cp ./theme/aria/_config.yml.example ./theme/aria/_config.yml<br></code></pre></td></tr></table></figure>
+<p>&nbsp;aria의 configuration file을 만들어 줍니다. aria의 설정을 변경하고자 할 때 사용하는 파일입니다.</p>
+<hr>
+<p>참조</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/">Hexo Documentation</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">Alpha Dust Demo Page</a></li>
+<li><a target="_blank" rel="noopener" href="https://aria.ismyonly.one/">Aria Demo Page</a></li>
+</ul>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/blog/" rel="tag"><i class="fas fa-tags"></i>blog</a>
+        
+        <a class="post-tag button" href="/tags/hexo/" rel="tag"><i class="fas fa-tags"></i>hexo</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2019/11/23/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-2/" rel="next" title="포스팅을 위한 hexo 사용법"><i class="fas fa-angle-left"></i><span class="nav-title">포스팅을 위한 hexo 사용법</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/2020/04/07/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-4/" rel="prev" title="hexo blog 테마 변경하기 2"><span class="nav-title">hexo blog 테마 변경하기 2</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  <script defer id="dsq-count-scr" src="//colorlion.disqus.com/count.js"></script>
+  
+  <div id="disqus_thread" class="disqus_thread"></div>
+  <script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = "https://colorlion.github.io/2020/03/18/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-3/";
+    this.page.identifier = "2020/03/18/기술-블로그-구축기-3/";
+  };
+  (function() {
+    var d = document, s = d.createElement("script");
+    s.src = "https://colorlion.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="Back to Top"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a></span>
+        </div>
+        
+        <div class="busuanzi">
+          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="Site Visit Count" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="Site User Count" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="Page Click Count" aria-hidden="false"></span></span>
+        </div>
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
