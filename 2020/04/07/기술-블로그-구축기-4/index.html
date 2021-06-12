@@ -46,7 +46,7 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     
     
-    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml" />
+    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml">
     
     
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
@@ -180,7 +180,7 @@
     <script defer type="text/javascript" src="/js/custom.js"></script>
     <title>hexo blog 테마 변경하기 2 | ColorLion's IT Blog - EZ bloging</title>
   <meta name="generator" content="Hexo 5.4.0"></head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
+  <body itemscope itemtype="http://schema.org/WebPage" lang="en" data-spy="scroll" data-target=".list-group">
     
 <header id="header" class="header" style="background: #33363b;">
   <div class="container">
@@ -221,7 +221,7 @@
       <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/04/07/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-4/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="ColorLion">
-       <meta itemprop="description" content="">
+       <meta itemprop="description" content>
        <meta itemprop="image" content="/images/avatar.png">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -265,7 +265,7 @@
 </blockquote>
 </blockquote>
 <p>&nbsp;저는 마누라는 커녕 여자친구도 없으니 전부 바꿔보도록 하겠습니다.</p>
-<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><h2 id="Aria-Blog-Sample"><a href="#Aria-Blog-Sample" class="headerlink" title="Aria Blog Sample"></a>Aria Blog Sample</h2><p><img src="aria1.png" alt="aria blog sample"><br>&nbsp;sample은 aria theme을 만든 <a target="_blank" rel="noopener" href="https://aria.ismyonly.one/">Alynx Zhou의 blog</a>입니다. 취향은 존중해야 하니 변경할 부분들만 다시 확인하도록 하겠습니다.</p>
+<h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><h2 id="Aria-Blog-Sample"><a href="#Aria-Blog-Sample" class="headerlink" title="Aria Blog Sample"></a>Aria Blog Sample</h2><p><img src="aria1.png" alt="aria blog sample"><br>&nbsp;sample은 aria theme을 만든 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://aria.ismyonly.one/">Alynx Zhou의 blog</a>입니다. 취향은 존중해야 하니 변경할 부분들만 다시 확인하도록 하겠습니다.</p>
 <br>
 
 <h2 id="변경할-부분"><a href="#변경할-부분" class="headerlink" title="변경할 부분"></a>변경할 부분</h2><p><img src="aria2.png" alt="change parts"></p>
@@ -315,7 +315,7 @@
 
 <h2 id="Fonts-Code-Highlighting-Setting"><a href="#Fonts-Code-Highlighting-Setting" class="headerlink" title="Fonts/Code Highlighting Setting"></a>Fonts/Code Highlighting Setting</h2><h3 id="Change-Fonts"><a href="#Change-Fonts" class="headerlink" title="Change Fonts"></a>Change Fonts</h3><p>&nbsp;기본 font를 사용한다면 영어는 적용되지만 한글이 적용이 안되기 때문에 변경해주도록 하겠습니다.</p>
 <figure class="hljs highlight yml"><figcaption><span>./blog_root/theme/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Select all your webfont in a CDN like Google Fonts, and then copy `href` property in the `&lt;link&gt;` tag, like `link: //fonts.googleapis.com/css?family=Lato|Roboto+Condensed|Skranji|Ubuntu|Ubuntu+Mono`.</span><br><span class="hljs-comment"># Then set different fonts to different parts here.</span><br><span class="hljs-attr">custom_font:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">link:</span><br>   <span class="hljs-bullet">-</span> <span class="hljs-string">//cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css</span><br>   <span class="hljs-bullet">-</span> <span class="hljs-string">//cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css</span><br>   <span class="hljs-bullet">-</span> <span class="hljs-string">//cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css</span><br>  <span class="hljs-attr">all:</span> <span class="hljs-string">&#x27;NanumSquare&#x27;</span><br>  <span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;NanumSquare&#x27;</span><br>  <span class="hljs-attr">subtitle:</span> <span class="hljs-string">&#x27;NanumSquare&#x27;</span><br>  <span class="hljs-attr">main:</span> <span class="hljs-string">&#x27;NanumSquareRound&#x27;</span><br>  <span class="hljs-attr">code:</span> <span class="hljs-string">&#x27;D2Coding&#x27;</span><br></code></pre></td></tr></table></figure>
-<p>개인적으로 <a target="_blank" rel="noopener" href="https://hangeul.naver.com/2017/nanum">naver</a>의 폰트를 정말 좋아합니다. 가독성도 좋고 둥글 둥글 하니 귀엽기도 한 것같고 그렇습니다.</p>
+<p>개인적으로 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hangeul.naver.com/2017/nanum">naver</a>의 폰트를 정말 좋아합니다. 가독성도 좋고 둥글 둥글 하니 귀엽기도 한 것같고 그렇습니다.</p>
 <h3 id="Change-Code-Highlighting"><a href="#Change-Code-Highlighting" class="headerlink" title="Change Code Highlighting"></a>Change Code Highlighting</h3><p>&nbsp;저는 code highlignting은 무조건 <code>atom-one-dark</code> theme을 사용합니다. vscode도 그렇고 theme를 변경할 수 있다면 대부분 <code>atom-one-dark</code>를 사용합니다.</p>
 <figure class="hljs highlight yml"><figcaption><span>./blog_root/theme/aria/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Available: atom-one-dark | atom-one-light | solarized-dark | solarized-light</span><br><span class="hljs-attr">highlight:</span> <span class="hljs-string">atom-one-dark</span><br></code></pre></td></tr></table></figure>
 <p><code>aria</code> theme을 사용하게 된 가장 큰 이유중 하나가 <code>atom-one-dark</code>를 사용할 수 있고, 가장 잘 어울렸기 때문입니다.</p>
@@ -392,7 +392,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a></span>
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">BY-NC-SA 4.0</a></span>
         </div>
         
         <div class="busuanzi">
@@ -403,11 +403,11 @@
       <div class="footer-right">
         <div class="custom-info">
           
-          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank">GitHub Pages</a>
+          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank" rel="external nofollow noopener noreferrer">GitHub Pages</a>
           
         </div>
         <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+          Proudly Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="external nofollow noopener noreferrer">ARIA</a>
         </div>
       </div>
     </div>

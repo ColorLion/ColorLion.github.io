@@ -4,12 +4,43 @@
   
     
     <entry>
+      <title>Google 개발자 계정을 만들어보자</title>
+      <link href="/2021/06/12/Google-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B3%84%EC%A0%95%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/"/>
+      <url>/2021/06/12/Google-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B3%84%EC%A0%95%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="prologue"><a href="#prologue" class="headerlink" title="prologue"></a>prologue</h1><p>안드로이드 개발자라면 만들어야 할 수 밖에 없는 그 계정 Google 개발자 계정입니다. 물론 전부는 아니겠지만 대부분의 경우엔 구글 플레이스토어에 앱을 출시합니다. 저도 안드로이드를 공부하는 입장으로서 만들어 보았습니다.</p><h2 id="준비물"><a href="#준비물" class="headerlink" title="준비물"></a>준비물</h2><p>Google 개발자 계정을 만들기 위해선 다음의 준비물이 필요합니다.</p><ul><li>계정 등록비: 25$</li><li>개발자 계정으로 만들 Google 계정</li></ul><p>일반 구글 계정을 구글 콘솔에서 등록 수수료 25$를 결제하면 개발자 계정으로 Teir up 하는 구조 같습니다.(<del>이래서 플랫폼 사업이 돈이 되나 봅니다. 등록만 하는데 피같은 3만원을 가져가고, 수익이 나면 그것도 떼가고</del>)</p><h1 id="계정-만들기"><a href="#계정-만들기" class="headerlink" title="계정 만들기"></a>계정 만들기</h1><p>기존 계정을 사용하기엔 무리가 있으니 만드는거 새로운 계정으로 만들었습니다. 구글 계정을 만드는 방법은 어렵지 않으니 생략했습니다.</p><h1 id="개발자-계정으로-Tier-Up"><a href="#개발자-계정으로-Tier-Up" class="headerlink" title="개발자 계정으로 Tier Up"></a>개발자 계정으로 Tier Up</h1><p><del>롤 승급하고싶다.</del></p><h2 id="새-개발자-계정-만들기"><a href="#새-개발자-계정-만들기" class="headerlink" title="새 개발자 계정 만들기"></a>새 개발자 계정 만들기</h2><p>구글 플레이 개발자 콘솔은 <a href="https://play.google.com/console/developers">이곳에서</a></p><p><img src="/2021/06/12/Google-개발자-계정을-만들어보자/1.png" alt="create dev account"><br>이름 정하는건 변수던 함수던 사용자명이던 가장 고민되는 부분입니다</p><h2 id="등록비-결제"><a href="#등록비-결제" class="headerlink" title="등록비 결제"></a>등록비 결제</h2><p><img src="/2021/06/12/Google-개발자-계정을-만들어보자/2.png" alt="pay"><br>과연 출시한 앱으로 3만원을 벌 수 있을까요</p><h2 id="완성"><a href="#완성" class="headerlink" title="완성"></a>완성</h2><p><img src="/2021/06/12/Google-개발자-계정을-만들어보자/3.png" alt="done"><br>-30,000 KRW</p><h1 id="Console-창-확인"><a href="#Console-창-확인" class="headerlink" title="Console 창 확인"></a>Console 창 확인</h1><p><img src="/2021/06/12/Google-개발자-계정을-만들어보자/4.png" alt="console"><br>구글 플레이스토어에 앱을 출시할 수 있는 자격을 샀습니다(<del>현질?</del>). 정책을 위반한다면 개발자 개정이 정지를 당하니 주의하도록 합시다.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> google </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>사회복무요원의 2021년 하반기 목표</title>
       <link href="/2021/06/07/%EC%82%AC%ED%9A%8C%EB%B3%B5%EB%AC%B4%EC%9A%94%EC%9B%90%EC%9D%98-2021%EB%85%84-%ED%95%98%EB%B0%98%EA%B8%B0-%EB%AA%A9%ED%91%9C/"/>
       <url>/2021/06/07/%EC%82%AC%ED%9A%8C%EB%B3%B5%EB%AC%B4%EC%9A%94%EC%9B%90%EC%9D%98-2021%EB%85%84-%ED%95%98%EB%B0%98%EA%B8%B0-%EB%AA%A9%ED%91%9C/</url>
       
         <content type="html"><![CDATA[<p>2021년이 벌써 반이나 지나갔습니다. 작년 이맘때부터 사회복무요원을 시작했는데 벌써 1년은 개뿔 시간 진짜 안가더라구요. 돌아보니 좀 안타까운 시간이 아니였나 라는 생각이 듭니다. 시간도 많이 낭비했고, 뭐 딱히 한건 없고.. 그래서 이번에 다시 마음을 다잡고 남은 기간동안이라도 준비를 철저히하고자 합니다.<br><img src="%EA%B0%95%EC%A0%9C%EC%A7%95%EC%9A%A9.jpeg" alt="So Sad"><br><del>현역보다 낫다고는 하지만 20대의 짧지 않은 시간을 끌려간다는 것은…</del></p><h1 id="지난-1년"><a href="#지난-1년" class="headerlink" title="지난 1년"></a>지난 1년</h1><p>그동안 보안기사도 준비하고, 개발 공부도 좀 했지만 다시 정신을 차리게 된건 얼마 안된 것 같습니다. 지난 1년간 가장 열심히 했던 건 보안기사 시험이였지만 이번 5월 시험은 마음 아프게 떨어지고 말았습니다.</p><p>합격자 발표가 나지 않았는데 어떻게 떨어진걸 아냐구요? 감 이란게 있잖아요 내가 준비한건 법 외에 모든걸 했지만 법 만 나왔을때의 기분 참 안타깝다 그죠?</p><p>그 외에 운동 조금 하고 게임 많이 하고 흠… 써놓고 보니 진짜로 1년동안 미래를 위해 준비한 것들이 없는 것 보니 마음이 아프네요… 2년 전까지만 해도 대학원생(<del>노예</del>)이였는데..</p><p><img src="/2021/06/07/사회복무요원의-2021년-하반기-목표/lol.png" alt="what happened"><br><del>어째서 눈물이?</del></p><h1 id="앞으로의-1년"><a href="#앞으로의-1년" class="headerlink" title="앞으로의 1년"></a>앞으로의 1년</h1><p>언제까지고 과거의 나처럼 살 수는 없으니 이번 하반기부터라도 하나하나 개선해 보는 것이죠<br>하반기 목표는 다음과 같습니다</p><ul><li>자격증 취득<ul><li>AWS-SOLUTIONS-ARCHITECT-ASSOCIATE</li><li>Azure AZ-500</li><li>SQLD(가능하다면 SQLP 까지)</li><li>정보보안기사</li></ul></li><li>블로그 1일 1포스팅</li><li>알고리즘 공부</li><li>영어 공부</li><li>공모전 준비</li></ul><p>적어놓고보니 참 많은 것 같습니다. 각 항목별로 하루 30분에서 1시간씩 쌓아 간다는 느낌으로 해야 할 것들입니다. 무턱대로 하루 왠종일 잡고있다간 금방 힘들다고 안할게 뻔하죠 뭐</p><p>그럼 전 이만 <code>codewars</code> 풀러 가봐야겠습니다. 그럼 이만~</p>]]></content>
       
+      
+      <categories>
+          
+          <category> plan </category>
+          
+      </categories>
       
       
         <tags>

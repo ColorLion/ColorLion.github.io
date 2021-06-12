@@ -46,7 +46,7 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     
     
-    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml" />
+    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml">
     
     
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
@@ -180,7 +180,7 @@
     <script defer type="text/javascript" src="/js/custom.js"></script>
     <title>hexo blog 테마 변경하기 1 | ColorLion's IT Blog - EZ bloging</title>
   <meta name="generator" content="Hexo 5.4.0"></head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
+  <body itemscope itemtype="http://schema.org/WebPage" lang="en" data-spy="scroll" data-target=".list-group">
     
 <header id="header" class="header" style="background: #33363b;">
   <div class="container">
@@ -221,7 +221,7 @@
       <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/03/18/%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-3/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="ColorLion">
-       <meta itemprop="description" content="">
+       <meta itemprop="description" content>
        <meta itemprop="image" content="/images/avatar.png">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -273,7 +273,7 @@
 <li>영어 문서가 있을 것</li>
 <li>필요한 기능(댓글, google analytics, code block의 highlighting 지원 등)</li>
 </ul>
-<p>다음과 같은 기준으로 <a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/">hexo themes</a>에서 후보군을 정했습니다.</p>
+<p>다음과 같은 기준으로 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/ko/docs/">hexo themes</a>에서 후보군을 정했습니다.</p>
 <ul>
 <li>Aria</li>
 <li>Alpha Dust</li>
@@ -294,15 +294,15 @@
 <br>
 
 <h2 id="Modify-Configuration"><a href="#Modify-Configuration" class="headerlink" title="Modify Configuration"></a>Modify Configuration</h2><h3 id="blog’s-config-yml"><a href="#blog’s-config-yml" class="headerlink" title="blog’s _config.yml"></a>blog’s <code>_config.yml</code></h3><figure class="hljs highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># theme change</span><br><span class="hljs-attr">theme:</span> <span class="hljs-string">aria</span><br><br><span class="hljs-comment"># language</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">en</span><br><br><span class="hljs-comment"># highlighting setting</span><br><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span><br></code></pre></td></tr></table></figure>
-<p>&nbsp;theme를 변경하면서 기본적인 설정도 변경했습니다. 언어는 설정하지 않으면 default language인 <strong>중국어</strong>로 표시될 것이고, highlighting 설정을 하지않으면 이 theme을 <strong>쓰는 이유가 없어</strong>지게 되니 설정하도록 합시다. 그 밖에 다른 설정을 변경하시는 분들은 <a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/">hexo documenation</a>을 참조하시기 바랍니다.</p>
+<p>&nbsp;theme를 변경하면서 기본적인 설정도 변경했습니다. 언어는 설정하지 않으면 default language인 <strong>중국어</strong>로 표시될 것이고, highlighting 설정을 하지않으면 이 theme을 <strong>쓰는 이유가 없어</strong>지게 되니 설정하도록 합시다. 그 밖에 다른 설정을 변경하시는 분들은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/ko/docs/">hexo documenation</a>을 참조하시기 바랍니다.</p>
 <h3 id="create-aria’s-config-yml"><a href="#create-aria’s-config-yml" class="headerlink" title="create aria’s _config.yml"></a>create aria’s <code>_config.yml</code></h3><figure class="hljs highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">$ cp ./theme/aria/_config.yml.example ./theme/aria/_config.yml<br></code></pre></td></tr></table></figure>
 <p>&nbsp;aria의 configuration file을 만들어 줍니다. aria의 설정을 변경하고자 할 때 사용하는 파일입니다.</p>
 <hr>
 <p>참조</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/">Hexo Documentation</a></li>
-<li><a target="_blank" rel="noopener" href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">Alpha Dust Demo Page</a></li>
-<li><a target="_blank" rel="noopener" href="https://aria.ismyonly.one/">Aria Demo Page</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/ko/docs/">Hexo Documentation</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">Alpha Dust Demo Page</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://aria.ismyonly.one/">Aria Demo Page</a></li>
 </ul>
 
     </main>
@@ -377,7 +377,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a></span>
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">BY-NC-SA 4.0</a></span>
         </div>
         
         <div class="busuanzi">
@@ -388,11 +388,11 @@
       <div class="footer-right">
         <div class="custom-info">
           
-          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank">GitHub Pages</a>
+          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank" rel="external nofollow noopener noreferrer">GitHub Pages</a>
           
         </div>
         <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+          Proudly Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="external nofollow noopener noreferrer">ARIA</a>
         </div>
       </div>
     </div>

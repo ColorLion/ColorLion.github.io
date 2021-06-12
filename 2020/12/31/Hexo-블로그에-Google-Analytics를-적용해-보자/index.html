@@ -46,7 +46,7 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     
     
-    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml" />
+    <link rel="alternate" href="/atom.xml" title="ColorLion's IT Blog" type="application/atom+xml">
     
     
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
@@ -180,7 +180,7 @@
     <script defer type="text/javascript" src="/js/custom.js"></script>
     <title>Hexo 블로그에 Google Analytics를 적용해 보자 | ColorLion's IT Blog - EZ bloging</title>
   <meta name="generator" content="Hexo 5.4.0"></head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="en"  data-spy="scroll" data-target=".list-group">
+  <body itemscope itemtype="http://schema.org/WebPage" lang="en" data-spy="scroll" data-target=".list-group">
     
 <header id="header" class="header" style="background: #33363b;">
   <div class="container">
@@ -221,7 +221,7 @@
       <link itemprop="mainEntityOfPage" href="https://colorlion.github.io/2020/12/31/Hexo-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-Google-Analytics%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%B4-%EB%B3%B4%EC%9E%90/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="ColorLion">
-       <meta itemprop="description" content="">
+       <meta itemprop="description" content>
        <meta itemprop="image" content="/images/avatar.png">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -262,7 +262,7 @@
 <h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><p>일단 블로그에 매달아 놓으려면 이게 무엇에 쓰는 것인지는 알아야 매달지 말지를 결정할 수 있습니다. 쓸모없는거 매달아놓고 나중에 치우것은 정말 귀찮습니다. 그런고로 잘 알아보고 적절한 것을 갔다 쓰면 훗날 있을 귀찮음을 하나 줄일 수 있습니다.</p>
 <p>그래서 Google Analytics(이하 GA)가 무엇인가? 하면 사용자들의 나이, 성별, 페이지에 머물던 시간, 행동 패턴들을 이용하고 조합해 유의미한 통계들을 출력해주는 서비스입니다. 신규 방문의 비율이 많은지, 재방문이 많은지, 접속자는 모바일이 많은지, 데스크탑이 많은지 등등 꽤 유의미한 정보를 얻을 수 있습니다.(<del>과연 그 정보가 블로그를 하는데 꼭 필요한가? 기술블로그라 잘 안볼텐데?</del>)</p>
 <p>사실 작은 기술 블로그를 운영하는 저는 그다지 필요 없는 서비스입니다. 어차피 검색해서 들어올 사람들은 한정적이고 요즘 사람들은 긴 글을 잘 읽지 않기 때문입니다. 그렇지만 사용하려는 이유는 안해보는 것 보단 낫기 때문입니다. GA는 웹 뿐만 아니라 모바일 앱에도 적용을 할 수 있습니다. 모바일 앱이나 다른 애플리케이션에 적용하기 전에 한번 사용해본다는 생각으로 작업했습니다.</p>
-<h1 id="Google-Analytics-Setting"><a href="#Google-Analytics-Setting" class="headerlink" title="Google Analytics Setting"></a>Google Analytics Setting</h1><h2 id="가입"><a href="#가입" class="headerlink" title="가입"></a>가입</h2><p>서론이 길었으니 바로 시작하겠습니다. 가입은 <a target="_blank" rel="noopener" href="https://analytics.google.com/analytics/web/provision/#/provision">이곳(Google Analytics)</a>에서 진행합니다. 새로운 계정을 만드는 것은 언제나 설레는 일입니다. 특히 게임 계정을 만들땐 특히나 더욱 설레곤 합니다.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/1.start.png" alt="1.Google Analytics Sign up"></p>
+<h1 id="Google-Analytics-Setting"><a href="#Google-Analytics-Setting" class="headerlink" title="Google Analytics Setting"></a>Google Analytics Setting</h1><h2 id="가입"><a href="#가입" class="headerlink" title="가입"></a>가입</h2><p>서론이 길었으니 바로 시작하겠습니다. 가입은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://analytics.google.com/analytics/web/provision/#/provision">이곳(Google Analytics)</a>에서 진행합니다. 새로운 계정을 만드는 것은 언제나 설레는 일입니다. 특히 게임 계정을 만들땐 특히나 더욱 설레곤 합니다.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/1.start.png" alt="1.Google Analytics Sign up"></p>
 <h2 id="계정-설정"><a href="#계정-설정" class="headerlink" title="계정 설정"></a>계정 설정</h2><p>게임으로 치면 닉네임에 해당하는 부분입니다. 닉네임을 잘 정해두면 두고두고 이름으로 고민하지 안하도 됩니다. 여러분들도 이름짓기가 얼마나 힘든 일인지 알고 있습니다 변수명, 함수명 짓기가 얼마나 힘든지.<br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/2.Naming.png" alt="2.Google Analytics Account Naming"></p>
 <h2 id="속성-설정"><a href="#속성-설정" class="headerlink" title="속성 설정"></a>속성 설정</h2><p>어디에 사용할 지 라벨을 붙이는 과정입니다. 여기서도 이름을 붙어야 합니다. 꼭 필요한 과정이긴 하지만 도대체 이름을 얼마나 붙여야 하는지… 이름은 기술 블로그에 적용하기 위해 만들었으니 Blog라는 이름을 사용했습니다. <del>통화는 $가 멋저 보여서 변경하지 않았습니다.</del><br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/3.Labeling.png" alt="3.Google Analytics Attribution Labeling"></p>
 <h2 id="비즈니스-정보"><a href="#비즈니스-정보" class="headerlink" title="비즈니스 정보"></a>비즈니스 정보</h2><p>비즈니스를 하진 않지만 항목은 성실하게 작성했습니다. <del>비즈니스를 하지 않아도 수익은 얻고싶은 그런 마음</del><br><img src="/2020/12/31/Hexo-블로그에-Google-Analytics를-적용해-보자/4.Businessinfo.png" alt="4.Google Analytics business info"></p>
@@ -349,7 +349,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a></span>
+          <span class="author">ColorLion</span><span class="year"><i class="far fa-copyright"></i>2021</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">BY-NC-SA 4.0</a></span>
         </div>
         
         <div class="busuanzi">
@@ -360,11 +360,11 @@
       <div class="footer-right">
         <div class="custom-info">
           
-          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank">GitHub Pages</a>
+          github<i class="fab fa-github-alt"></i><a href="https://github.com/ColorLion" target="_blank" rel="external nofollow noopener noreferrer">GitHub Pages</a>
           
         </div>
         <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+          Proudly Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="external nofollow noopener noreferrer">ARIA</a>
         </div>
       </div>
     </div>
