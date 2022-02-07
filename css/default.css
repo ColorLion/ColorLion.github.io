@@ -10790,11 +10790,11 @@ article .content {
   margin-top: 20px;
 }
 article h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 600;
 }
 article h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 500;
 }
 article.media {
@@ -10841,14 +10841,14 @@ article.article .content {
   font-size: 1.35rem;
 }
 article.article .content h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 600;
 }
 article.article .content h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 article.article h3 {
-  font-size: 1.3em;
+  font-size: 1.35em;
   font-weight: 450;
 }
 article.article h4 {
@@ -12136,6 +12136,7 @@ body.night .v pre {
 body.night .content p .has-text-centered {
   opacity: 0.5;
 }
+body.night li,
 body.night body,
 body.night strong,
 body.night time,
@@ -12149,6 +12150,7 @@ body.night .content h4,
 body.night .content h5,
 body.night .content h6,
 body.night .content p,
+body.night .content li,
 body.night .navbar-item,
 body.night .navbar-item.is-active,
 body.night .navbar-link,
@@ -12504,6 +12506,7 @@ body.night .twikoo code {
   body:not(.light) .content p .has-text-centered {
     opacity: 0.5;
   }
+  body:not(.light) li,
   body:not(.light) body,
   body:not(.light) strong,
   body:not(.light) time,
@@ -12517,6 +12520,7 @@ body.night .twikoo code {
   body:not(.light) .content h5,
   body:not(.light) .content h6,
   body:not(.light) .content p,
+  body:not(.light) .content li,
   body:not(.light) .navbar-item,
   body:not(.light) .navbar-item.is-active,
   body:not(.light) .navbar-link,

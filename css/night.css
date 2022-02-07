@@ -233,6 +233,7 @@ body.night .v pre {
 body.night .content p .has-text-centered {
   opacity: 0.5;
 }
+body.night li,
 body.night body,
 body.night strong,
 body.night time,
@@ -602,6 +603,7 @@ body.night .twikoo code {
   body:not(.light) .content p .has-text-centered {
     opacity: 0.5;
   }
+  body:not(.light) li,
   body:not(.light) body,
   body:not(.light) strong,
   body:not(.light) time,
