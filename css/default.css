@@ -10797,6 +10797,13 @@ article h2 {
   font-size: 1.4em;
   font-weight: 500;
 }
+article h3 {
+  font-size: 1.3em;
+  font-weight: 450;
+}
+article p {
+  margin-bottom: 0;
+}
 article.media {
   color: #7a7a7a;
 }
@@ -10826,7 +10833,7 @@ article.media .media-content .title {
   line-height: inherit;
 }
 article.article {
-  font-weight: 500;
+  font-weight: 550;
 }
 article.article .article-meta,
 article.article .article-tags {
@@ -10840,16 +10847,22 @@ article.article .content {
   word-wrap: break-word;
   font-size: 1.35rem;
 }
+article.article .content p {
+  margin-bottom: 0;
+}
+article.article .content ul {
+  margin-top: 0;
+}
 article.article .content h1 {
   font-size: 1.6em;
-  font-weight: 600;
+  font-weight: 550;
 }
 article.article .content h2 {
   font-size: 1.4em;
 }
 article.article h3 {
-  font-size: 1.35em;
-  font-weight: 450;
+  font-size: 1em;
+  font-weight: 550;
 }
 article.article h4 {
   font-size: 1.125em;
@@ -10861,6 +10874,8 @@ article.article pre {
   font-size: 0.85em;
 }
 article.article code {
+  font-size: 1.35rem;
+  font-weight: 350;
   padding: 0;
   background: transparent;
   overflow-wrap: break-word;
@@ -11978,6 +11993,8 @@ body.night .hljs-link {
 }
 body.night .content code {
   color: #cbba7d;
+  font-size: 1.35rem;
+  font-weight: 350;
 }
 body.night #night-nav #night-icon:before {
   content: '\f0eb';
@@ -12348,6 +12365,8 @@ body.night .twikoo code {
   }
   body:not(.light) .content code {
     color: #cbba7d;
+    font-size: 1.35rem;
+    font-weight: 350;
   }
   body:not(.light) #night-nav #night-icon:before {
     content: '\f0eb';
