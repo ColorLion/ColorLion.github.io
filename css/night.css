@@ -95,11 +95,7 @@ body.night #universe {
   height: 100%;
   pointer-events: none;
 }
-body.night img{
-  display: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
+body.night img,
 body.night video,
 body.night iframe,
 body.night .waifu,
@@ -379,6 +375,11 @@ body.night .twikoo pre {
 body.night .twikoo code {
   color: #cbba7d;
   background-color: #373d48;
+}
+body.night img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
@@ -751,5 +752,10 @@ body.night .twikoo code {
   body:not(.light) .twikoo code {
     color: #cbba7d;
     background-color: #373d48;
+  }
+  body:not(.light) img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
