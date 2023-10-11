@@ -95,7 +95,11 @@ body.night #universe {
   height: 100%;
   pointer-events: none;
 }
-body.night img,
+body.night img{
+  display: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 body.night video,
 body.night iframe,
 body.night .waifu,
