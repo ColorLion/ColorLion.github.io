@@ -144,6 +144,9 @@ article.article .title {
 }
 article.article img {
   max-height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 article .title a {
   background-image: linear-gradient(transparent calc(100% - 1px), #5d93db 1px);
