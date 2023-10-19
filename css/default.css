@@ -452,6 +452,9 @@ hr {
   margin: 1.5rem 0;
 }
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   max-width: 100%;
 }
@@ -12301,7 +12304,7 @@ body.night .twikoo code {
   body:not(.light) .hljs {
     display: block;
     overflow-x: auto;
-    padding: 0.5em;
+    padding: 0em;
     color: #abb2bf;
     background: #282c34;
   }

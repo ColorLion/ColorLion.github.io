@@ -11,7 +11,7 @@ body.night {
 body.night .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 0em;
   color: #abb2bf;
   background: #282c34;
 }
@@ -388,7 +388,7 @@ body.night img {
   body:not(.light) .hljs {
     display: block;
     overflow-x: auto;
-    padding: 0.5em;
+    padding: 0em;
     color: #abb2bf;
     background: #282c34;
   }
